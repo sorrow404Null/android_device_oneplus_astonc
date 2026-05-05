@@ -91,8 +91,6 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
 
         // Sync UI state based on current HBM/PWM state
         syncHbmPwmState();
-
-        initNotificationSliderPreference();
     }
 
     @Override
@@ -136,16 +134,16 @@ public class DeviceSettings extends SettingsBasePreferenceFragment
         mOnePulsePWMSwitch.setEnabled(FileUtils.isFileWritable(Constants.NODE_ONEPULSE_PWM));
     }
 
-    private void initNotificationSliderPreference() {
-        registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_USAGE);
-        registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_ACTION_TOP);
-        registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_ACTION_MIDDLE);
-        registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_ACTION_BOTTOM);
+    // private void initNotificationSliderPreference() {
+    //     registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_USAGE);
+    //     registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_ACTION_TOP);
+    //     registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_ACTION_MIDDLE);
+    //     registerPreferenceListener(Constants.KEY_NOTIF_SLIDER_ACTION_BOTTOM);
 
-        ListPreference usagePref = (ListPreference) findPreference(
-                Constants.KEY_NOTIF_SLIDER_USAGE);
-        handleSliderUsageChange(usagePref.getValue());
-    }
+    //     ListPreference usagePref = (ListPreference) findPreference(
+    //             Constants.KEY_NOTIF_SLIDER_USAGE);
+    //     handleSliderUsageChange(usagePref.getValue());
+    // }
 
     private void registerPreferenceListener(String key) {
         Preference p = findPreference(key);

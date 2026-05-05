@@ -18,41 +18,6 @@
 	xmlns:settings="http://schemas.android.com/apk/res/org.lineageos.device.settings">
 
     <PreferenceCategory
-        android:key="slider"
-        android:title="@string/notification_slider_category_title">
-
-        <ListPreference
-            android:key="slider_usage"
-            android:icon="@drawable/ic_slider"
-            android:dialogTitle="@string/notification_slider_usage_title"
-            android:title="@string/notification_slider_usage_title"
-            android:entries="@array/notification_slider_usage_entries"
-            android:entryValues="@array/notification_slider_usage_entry_values"
-            android:summary="%s" />
-
-        <ListPreference
-            android:key="action_top_position"
-            android:icon="@drawable/ic_up_icon"
-            android:dialogTitle="@string/notification_slider_selection_dialog_title"
-            android:title="@string/notification_slider_top_position"
-            android:summary="%s" />
-
-        <ListPreference
-            android:key="action_middle_position"
-            android:icon="@drawable/ic_middle_icon"
-            android:dialogTitle="@string/notification_slider_selection_dialog_title"
-            android:title="@string/notification_slider_middle_position"
-            android:summary="%s" />
-
-        <ListPreference
-            android:key="action_bottom_position"
-            android:icon="@drawable/ic_down_icon"
-            android:dialogTitle="@string/notification_slider_selection_dialog_title"
-            android:title="@string/notification_slider_bottom_position"
-            android:summary="%s" />
-    </PreferenceCategory>
-
-    <PreferenceCategory
         android:key="display_category"
         android:title="@string/display_category_title">
 
