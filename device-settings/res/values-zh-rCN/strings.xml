@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2016-2023 crDroid Android Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="device_title">一加设置</string>
+    <string name="device_summary">一加 Ace3 | 12R 专属设置</string>
+
+    <!-- Notification slider -->
+    <string name="notification_slider_category_title">提醒滑块</string>
+    <string name="notification_slider_title">提醒滑块设置</string>
+    <string name="notification_slider_selection_dialog_title">操作</string>
+    <string name="notification_slider_top_position">顶部位置</string>
+    <string name="notification_slider_middle_position">中间位置</string>
+    <string name="notification_slider_bottom_position">底部位置</string>
+    <string name="notification_slider_mode_total_silence">完全静音</string>
+    <string name="notification_slider_mode_alarms_only">仅闹钟</string>
+    <string name="notification_slider_mode_priority_only">仅优先级</string>
+    <string name="notification_slider_mode_none">全部</string>
+    <string name="notification_slider_usage_title">滑块用途</string>
+    <string name="notification_slider_for_notification">通知</string>
+    <string name="notification_slider_for_flashlight">手电筒</string>
+    <string name="notification_slider_for_brightness">亮度</string>
+    <string name="notification_slider_for_rotation">旋转</string>
+    <string name="notification_slider_for_ringer">铃声</string>
+    <string name="notification_slider_for_notification_ringer">通知与铃声</string>
+    <string name="notification_slider_flashlight_off">关闭</string>
+    <string name="notification_slider_flashlight_on">开启</string>
+    <string name="notification_slider_flashlight_blink">闪烁</string>
+    <string name="notification_slider_brightness_auto">自动</string>
+    <string name="notification_slider_brightness_brightest">最亮</string>
+    <string name="notification_slider_brightness_darkest">最暗</string>
+    <string name="notification_slider_rotation_auto">自动</string>
+    <string name="notification_slider_rotation_portrait">竖屏</string>
+    <string name="notification_slider_rotation_landscape_90">横屏（90°）</string>
+    <string name="notification_slider_rotation_landscape_270">横屏（270°）</string>
+    <string name="notification_slider_ringer_normal">正常</string>
+    <string name="notification_slider_ringer_vibrate">振动</string>
+    <string name="notification_slider_ringer_silent">静音</string>
+
+    <!-- Gaming category -->
+    <string name="gaming_category_title">游戏</string>
+    <string name="gaming_category_summary">游戏专属设置</string>
+
+    <!-- Bypass chargings -->
+    <string name="bypass_charging_category_title" translatable="false">@string/bypass_charging_title</string>
+    <string name="bypass_charging_title">绕行充电</string>
+    <string name="bypass_charging_summary">将电源直接供给手机</string>
+    <string name="bypass_charging_info_title">绕行充电可将电源直接供给主板而非电池，在运行游戏等高负载应用时有助于降低设备温度。</string>
+    <string name="bypass_charging_unavailable">此设备不支持绕行充电</string>
+    <string name="bypass_charging_enabled">已启用</string>
+    <string name="bypass_charging_disabled">已禁用</string>
+    <string name="bypass_charging_error">无法更改绕行充电状态，请稍后重试。</string>
+    <string name="bypass_charging_target_title">目标电量</string>
+    <string name="bypass_charging_target_summary">电池充电至目标电量后将自动启用绕行充电。</string>
+    <string name="bypass_charging_waiting">等待达到目标电量</string>
+    <string name="bypass_charging_waiting_for_target">等待充电至 %d%%</string>
+    <string name="bypass_charging_waiting_for_app">等待为 %1$s 充电至 %2$d%%</string>
+    <string name="bypass_charging_waiting_for_app_fallback">等待为应用充电至 %d%%</string>
+    <string name="bypass_charging_progress">充电中：%1$d%% / %2$d%%</string>
+    <string name="bypass_charging_progress_for_app">为 %3$s 充电中：%1$d%% / %2$d%%</string>
+    <string name="bypass_charging_progress_for_app_fallback">为应用充电中：%1$d%% / %2$d%%</string>
+    <string name="bypass_charging_app_picker_title">为以下应用自动启用绕行充电</string>
+    <string name="add_bypass_charging_package_title">添加应用到绕行列表</string>
+    <string name="bypass_app_monitor_title">绕行充电监控服务</string>
+    <string name="bypass_app_monitor_desc">检测是否应为当前活动应用启用绕行充电</string>
+    <!-- Bypass notification text -->
+    <string name="bypass_notif_idle">状态：空闲</string>
+    <!-- Global ON -->
+    <string name="bypass_notif_global_on">
+    状态：已开启&#10;绕行模式：全局
+    </string>
+    <!-- Global WAITING: args = target, current -->
+    <string name="bypass_notif_global_waiting">
+    状态：等待达到目标电量&#10;目标：%1$d%%&#10;当前电量：%2$d%%&#10;绕行模式：全局
+    </string>
+    <!-- App list present but no bypass app in foreground -->
+    <string name="bypass_notif_waiting_app">
+    状态：等待应用&#10;绕行模式：绕行列表
+    </string>
+    <!-- App WAITING: args = appLabel, target, current -->
+    <string name="bypass_notif_app_waiting">
+    状态：等待为 %1$s 达到目标电量&#10;目标：%2$d%%&#10;当前电量：%3$d%%&#10;绕行模式：绕行列表
+    </string>
+    <!-- App ON: args = appLabel -->
+    <string name="bypass_notif_app_on">
+    状态：已为 %1$s 开启&#10;绕行模式：绕行列表
+    </string>
+    <!-- Bypass charging manager notification lines -->
+    <string name="bc_status_on">状态：已开启</string>
+    <string name="bc_status_waiting_for_target">状态：等待达到目标电量</string>
+    <string name="bc_status_waiting_for_target_for_app">状态：等待为 %1$s 达到目标电量</string>
+    <string name="bc_status_on_for_app">状态：已为 %1$s 开启</string>
+    <string name="bc_status_waiting_for_app">状态：等待应用</string>
+    <string name="bc_status_idle">状态：空闲</string>
+    <string name="bc_target_with_value">目标：%1$d%%</string>
+    <string name="bc_current_level_with_value">当前电量：%1$d%%</string>
+    <string name="bc_mode_global">绕行模式：全局</string>
+    <string name="bc_mode_list">绕行模式：绕行列表</string>
+
+    <!-- Custom seekbar -->
+    <string name="custom_seekbar_value">当前值：<xliff:g id="v">%s</xliff:g></string>
+    <string name="custom_seekbar_default_value">默认</string>
+    <string name="custom_seekbar_default_value_to_set">默认值：<xliff:g id="v">%s</xliff:g>\n长按以设置</string>
+    <string name="custom_seekbar_default_value_is_set">已设置为默认值</string>
+
+    <!-- GameBar -->
+    <string name="game_bar_title">游戏悬浮窗</string>
+    <string name="game_bar_summary">启用系统悬浮窗（帧率、温度等）</string>
+    <string name="overlay_permission_required">需要悬浮窗权限</string>
+    <string name="overlay_permission_granted">已授予悬浮窗权限</string>
+    <string name="overlay_permission_denied">悬浮窗权限被拒绝</string>
+    <string name="game_bar_tile_label">游戏悬浮窗</string>
+    <string name="game_bar_tile_description">切换游戏悬浮窗</string>
+    <string name="game_bar_overlay_features_title">悬浮窗功能</string>
+    <string name="game_bar_enable">启用游戏悬浮窗</string>
+    <string name="game_bar_enable_summary">游戏中显示性能数据悬浮窗</string>
+    <string name="game_bar_stats_display">数据显示</string>
+    <string name="game_bar_fps_enable">帧率（FPS）</string>
+    <string name="game_bar_fps_enable_summary">显示当前每秒帧数</string>
+    <string name="game_bar_fps_method_title">帧率测量方式</string>
+    <string name="game_bar_fps_method_select_title">选择帧率方式</string>
+    <string name="game_bar_fps_method_select_summary">在新版 API 方式（默认）与旧版 Sysfs 之间选择</string>
+    <string name="game_bar_temp_enable">电池温度</string>
+    <string name="game_bar_temp_enable_summary">显示设备电池温度</string>
+    <string name="game_bar_cpu_usage_enable">CPU 占用率</string>
+    <string name="game_bar_cpu_usage_enable_summary">显示 CPU 使用百分比</string>
+    <string name="game_bar_cpu_clock_enable">CPU 频率</string>
+    <string name="game_bar_cpu_clock_enable_summary">显示各核心 CPU 运行频率</string>
+    <string name="game_bar_cpu_temp_enable">CPU 温度</string>
+    <string name="game_bar_cpu_temp_enable_summary">显示热区 CPU 温度</string>
+    <string name="game_bar_ram_enable">内存占用</string>
+    <string name="game_bar_ram_enable_summary">以 MB 为单位显示内存使用量</string>
+    <string name="game_bar_gpu_usage_enable">GPU 占用率</string>
+    <string name="game_bar_gpu_usage_enable_summary">显示 GPU 使用百分比</string>
+    <string name="game_bar_gpu_clock_enable">GPU 频率</string>
+    <string name="game_bar_gpu_clock_enable_summary">显示当前 GPU 运行频率</string>
+    <string name="game_bar_gpu_temp_enable">GPU 温度</string>
+    <string name="game_bar_gpu_temp_enable_summary">显示 GPU 温度</string>
+    <string name="game_bar_customization_title">自定义</string>
+    <string name="game_bar_ui_customization">界面自定义</string>
+    <string name="game_bar_position">悬浮窗位置</string>
+    <string name="game_bar_position_summary">选择悬浮窗在屏幕上的显示位置</string>
+    <string name="game_bar_reset_position">重置位置</string>
+    <string name="game_bar_reset_position_summary">将悬浮窗恢复至左上角</string>
+    <string name="game_bar_split_mode">布局模式</string>
+    <string name="game_bar_split_config_title">分栏配置</string>
+    <string name="game_bar_split_mode_summary">选择数据排列方式（堆叠或并排）</string>
+    <string name="game_bar_text_size">文字大小</string>
+    <string name="game_bar_text_size_summary">调整悬浮窗文字大小（切换悬浮窗以预览）</string>
+    <string name="game_bar_background_alpha">背景透明度</string>
+    <string name="game_bar_background_alpha_summary">调整悬浮窗背景不透明度（0-100%）</string>
+    <string name="game_bar_corner_radius">圆角半径</string>
+    <string name="game_bar_corner_radius_summary">调整悬浮窗圆角弧度</string>
+    <string name="game_bar_padding">内边距</string>
+    <string name="game_bar_padding_summary">调整数据周围的间距</string>
+    <string name="game_bar_item_spacing">条目间距</string>
+    <string name="game_bar_item_spacing_summary">调整各数据行之间的间距</string>
+    <string name="game_bar_title_color">标签颜色</string>
+    <string name="game_bar_title_color_summary">数据标签的颜色</string>
+    <string name="game_bar_value_color">数值颜色</string>
+    <string name="game_bar_value_color_summary">数字数值的颜色</string>
+    <string name="game_bar_update_interval">刷新间隔</string>
+    <string name="game_bar_update_interval_summary">悬浮窗数据刷新频率（毫秒）</string>
+    <string name="game_bar_gesture_title">悬浮窗手势控制</string>
+    <string name="game_bar_gestures">手势控制</string>
+    <string name="game_bar_single_tap_toggle">单击切换</string>
+    <string name="game_bar_single_tap_toggle_summary">点击悬浮窗以切换堆叠与并排布局</string>
+    <string name="game_bar_doubletap_capture">双击录制</string>
+    <string name="game_bar_doubletap_capture_summary">双击悬浮窗以开始/停止录制日志</string>
+    <string name="game_bar_longpress_enable">长按设置</string>
+    <string name="game_bar_longpress_enable_summary">长按悬浮窗以打开游戏悬浮窗设置</string>
+    <string name="game_bar_longpress_timeout">长按时长</string>
+    <string name="game_bar_longpress_timeout_summary">触发设置所需的按压时长（毫秒）</string>
+    <string name="game_bar_capture_title">录制日志</string>
+    <string name="game_bar_data_capture">数据录制</string>
+    <string name="game_bar_capture_start">开始记录</string>
+    <string name="game_bar_capture_start_summary">开始录制帧率与性能数据</string>
+    <string name="game_bar_capture_stop">停止记录</string>
+    <string name="game_bar_capture_stop_summary">停止录制性能数据</string>
+    <string name="game_bar_capture_export">导出日志数据</string>
+    <string name="game_bar_capture_export_summary">将录制数据保存为 CSV 文件</string>
+    <string name="game_bar_auto_enable_title">自动启用游戏悬浮窗的应用</string>
+    <string name="game_bar_add_packages_summary">添加应自动启用游戏悬浮窗的应用</string>
+    <string name="game_bar_applications">应用程序</string>
+    <string name="game_bar_position_top_left">左上</string>
+    <string name="game_bar_position_top_center">顶部居中</string>
+    <string name="game_bar_position_top_right">右上</string>
+    <string name="game_bar_position_bottom_left">左下</string>
+    <string name="game_bar_position_bottom_center">底部居中</string>
+    <string name="game_bar_position_bottom_right">右下</string>
+    <string name="game_bar_position_draggable">可拖动</string>
+    <string name="game_bar_split_mode_stacked">堆叠（纵向）</string>
+    <string name="game_bar_split_mode_side_by_side">并排（横向）</string>
+    <string name="game_bar_color_white">白色</string>
+    <string name="game_bar_color_black">黑色</string>
+    <string name="game_bar_color_red">红色</string>
+    <string name="game_bar_color_green">绿色</string>
+    <string name="game_bar_color_blue">蓝色</string>
+    <string name="game_bar_color_yellow">黄色</string>
+    <string name="game_bar_color_cyan">青色</string>
+    <string name="game_bar_color_magenta">洋红色</string>
+    <string name="game_bar_color_light_gray">浅灰色</string>
+    <string name="game_bar_color_dark_gray">深灰色</string>
+    <string name="game_bar_update_interval_fast">500ms（快速）</string>
+    <string name="game_bar_update_interval_normal">1000ms（正常）</string>
+    <string name="game_bar_update_interval_slow">2000ms（慢速）</string>
+    <string name="game_bar_update_interval_very_slow">3000ms（非常慢）</string>
+    <string name="game_bar_longpress_timeout_very_fast">500ms（极快）</string>
+    <string name="game_bar_longpress_timeout_fast">1000ms（快速）</string>
+    <string name="game_bar_longpress_timeout_normal">1500ms（正常）</string>
+    <string name="game_bar_longpress_timeout_slow">2000ms（慢速）</string>
+
+    <!-- Display -->
+    <string name="display_category_title">显示</string>
+
+    <!-- One-Pulse PWM (Classic) mode -->
+    <string name="onepulse_pwm_mode_title">单脉冲 PWM</string>
+    <string name="onepulse_pwm_mode_summary">启用单脉冲（高频）PWM，在中高亮度下减少屏幕闪烁</string>
+
+    <!-- HBM -->
+    <string name="hbm_category_title" translatable="false">@string/hbm_title</string>
+    <string name="hbm_title">HBM</string>
+    <string name="hbm_summary">高亮度模式</string>
+    <string name="hbm_unavailable">此设备不支持高亮度模式</string>
+    <string name="hbm_warning_title">警告</string>
+    <string name="hbm_warning_summary">HBM 会加速屏幕老化，请仅在必要时短暂使用。\n</string>
+    <string name="hbm_btn_enable">启用</string>
+    <string name="hbm_warning_dont_show_again">不再显示此警告</string>
+
+    <!-- Refresh Rate Settings -->
+    <string name="refresh_rate_title">刷新率</string>
+    <string name="refresh_rate_app_title">应用刷新率</string>
+    <string name="refresh_rate_app_summary">为各应用单独设置刷新率</string>
+    <string name="refresh_rate_settings">屏幕刷新率</string>
+    <string name="refresh_rate_global_title">全局刷新率</string>
+    <string name="refresh_rate_global_summary">所有应用的默认刷新率</string>
+    <string name="refresh_rate_overrides_title">应用专属设置</string>
+    <string name="refresh_rate_app_title_dialog">选择刷新率</string>
+    <string name="no_app_overrides">未配置任何应用专属刷新率</string>
+    <string name="refresh_rate_auto">自动</string>
+    <string name="refresh_rate_60hz" translatable="false"> 60 Hz</string>
+    <string name="refresh_rate_90hz" translatable="false"> 90 Hz</string>
+    <string name="refresh_rate_120hz" translatable="false">120 Hz</string>
+
+    <!-- HBM/PWM/RefreshRate tile messages -->
+    <string name="hbm_unavailable_pwm_active">PWM 已激活</string>
+    <string name="refresh_rate_locked_hbm">已锁定至 90Hz（HBM）</string>
+
+    <!-- Generic -->
+    <string name="delete">删除</string>
+    <string name="delete_message">移除所选项目？</string>
+    <string name="add_app">添加应用</string>
+    <string name="on">开启</string>
+    <string name="off">关闭</string>
+
+</resources>
