@@ -11,9 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/astonc/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_astonc
+PRODUCT_NAME := infinity_astonc
 PRODUCT_DEVICE := astonc
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -28,3 +28,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=PJE110 \
     SystemDevice=OP5CF9L1 \
     SystemName=PJE110
+
+
+#Infinity Config
+INFINITY_MAINTAINER := sorrow404null
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
